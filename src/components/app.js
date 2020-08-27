@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./home";
 import Works from "./works";
+import CV from "./cv";
 import Contact from "./contact";
 
 //import FooterContainer from "./navigation/footer-container";
@@ -26,6 +27,7 @@ export default class App extends Component {
                 <Switch>
                       <Route exact path="/" component={Home} />
                       <Route path="/works" component={Works} />
+                      <Route path="/cv" component={CV} />
                       <Route path="/contact" component={Contact} />
                 </Switch>
             
