@@ -15,7 +15,7 @@ export default class Contact extends Component {
         <div>
             <NavigationContainer />
             <h1>Contact</h1>
-            <h1>Formular/cerere de angajare in proiect</h1>
+            <h1>Formular/propunere de angajare in proiect</h1>
 
             <br />
             <br />

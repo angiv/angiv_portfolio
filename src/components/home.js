@@ -14,6 +14,7 @@ export default class Home extends Component {
             <h1>Portfolio</h1>
             <h3>About</h3>
             <h3>Skills</h3>
+            <h3>Clients</h3>
 
             <FooterContainer />
 

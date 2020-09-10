@@ -12,6 +12,7 @@ export default class Works extends Component {
             <h1>Infographics</h1>
             <h1>Posters</h1>
             <h1>Magazines</h1>
+            <h1>Studies</h1>
 
 
             <FooterContainer />
