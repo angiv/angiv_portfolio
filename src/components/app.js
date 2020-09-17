@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Home from "./home";
 import Works from "./works";
+import Publications from "./publications";
 import CV from "./cv";
 import Contact from "./contact";
 
@@ -27,6 +28,7 @@ export default class App extends Component {
                 <Switch>
                       <Route exact path="/" component={Home} />
                       <Route path="/works" component={Works} />
+                      <Route path="/publications" component={Publications} />
                       <Route path="/cv" component={CV} />
                       <Route path="/contact" component={Contact} />
                 </Switch>

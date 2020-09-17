@@ -24,7 +24,7 @@ handleEmailChange(event) {
 render() {
     return (
     <form onSubmit={this.handleSubmit}>
-        <label>  E-maiil:
+        <label>
             <input
             type="text"
             placeholder="E-mail"
@@ -40,5 +40,3 @@ render() {
 
 
 export default Form1;
-
-

@@ -10,8 +10,7 @@ export default class Home extends Component {
     return (
         <div>
             <NavigationContainer />
-            <h1>Angela Ivanesi </h1>
-            <h1>Portfolio</h1>
+
             <h3>About</h3>
             <h3>Skills</h3>
             <h3>Clients</h3>

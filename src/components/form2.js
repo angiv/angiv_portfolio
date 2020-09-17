@@ -83,44 +83,56 @@ render() {
 
     return (
        <Fragment>
+
+           <div className="contact-form-wrapper">
+           
             <form>
+            <div className="three-column">
             {/*Input */}
-            <label>
-                Name:
-                <input 
+             <input 
                     type="text" 
                     placeholder="Name"
                     name="name" 
                     value={inputText}
                     onChange={this.handleInputChange}
                 />
-            </label>
+                  
+                 <Form1 />
+
+
+                 {/*Select */} 
+                    <select value={selectText} onChange={this.handleSelectChange} className="select-element">
+                        {POSITIONS.map(({ id, value, title }) => (
+                        <option key={id} value={value}>{title}</option>
+                         ))}
+                 </select>
+                 </div>
+            </form>
             
-            <Form1 />
-
-            {/*Textarea */} <br />
-            <label htmlFor="text">Text:</label>
-            <textarea 
-                id="text" 
-                value={textareaText}
-                onChange={this.handleTextareaChange}
+            <form>
+            {/*Textarea */} 
+            <div className="one-column">
+                <textarea
+                    type="text"
+                    name="message"
+                    placeholder="Your message"
+                    value={this.state.description}
+                    onChange={this.handleChange}
                 />
+             </div>
 
-            {/*Select */} 
-            <select value={selectText} onChange={this.handleSelectChange}>
-                {POSITIONS.map(({ id, value, title }) => (
-                    <option key={id} value={value}>{title}</option>
-                 ) )}
-            </select>
-
-            {/*Button */} 
-            <br />
-            <button onClick={this.handleShow}>Sent</button>
+    
         </form>
 
-        <h2>{name}</h2>
-        <h3>{text}</h3>
-        <h3>{position}</h3>
+        </div>
+
+        
+        <div className="button_wrapper">
+                <button className="btn" type="submit">
+                    Send
+                </button>
+        </div>
+ 
        </Fragment>
 
         );

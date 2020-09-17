@@ -14,18 +14,14 @@ export default class Contact extends Component {
     return (
         <div>
             <NavigationContainer />
-            <h1>Contact</h1>
-            <h1>Formular/propunere de angajare in proiect</h1>
+            <div className="contact_wrapper">
+              <p>Do you have questions or sugestions? </p>
+              <p>Do you want to collaborate?</p>
+              <p> Do you need an offer for the services offered?</p>
+              <p> Contact me:</p>
+            </div>
 
-            <br />
-            <br />
-            <br />
             <Form2 />
-
-            <br />
-            <br />
-            <br />
-            <br />
 
             
             <FooterContainer />

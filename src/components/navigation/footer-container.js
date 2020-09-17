@@ -20,19 +20,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
         
        <div className='footer-wrapper-container'>
              
-            <a href='https://www.facebook.com/angela.ivanesi/' className="footer_socials">
-              <img src={Facebook} alt="FacebookIcon"/>         
+            <a href='https://www.facebook.com/angela.ivanesi/' className="footer_socials" target="_blank">
+              <img src={Facebook} alt="FacebookIcon"/>        
             </a>
            
-            <a href='https://www.linkedin.com/in/angela-ivanesi-30079210/' className="footer_socials">
+            <a href='https://www.linkedin.com/in/angela-ivanesi-30079210/' className="footer_socials" target="_blank">
                  <img src={LinkedinIcon} alt="LinkedinIcon" />    
             </a>
             
-            < a href='https://photos.app.goo.gl/QxBqEXhXDGDUrSSB7' className="footer_socials">
+            < a href='https://photos.app.goo.gl/QxBqEXhXDGDUrSSB7' className="footer_socials" target="_blank">
               <img src={GoogleIcon} alt="GoogleIcon" />    
             </a>
              
-             <a href='https://issuu.com/angiv' className="footer_socials">
+             <a href='https://issuu.com/angiv' className="footer_socials" target="_blank">
               <img src={IssuuIcon} alt="Issuu"/>
             </a>
  
