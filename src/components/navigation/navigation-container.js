@@ -13,7 +13,7 @@ export default class NavigationComponent extends Component {
        <div>
           <div className="nav-logo">
       
-              <img  className="nav-logo__img" src={Logo} alt="Logo"/>        
+              <img className="nav-logo__img" src={Logo} alt="Logo"/>        
    
           </div>
 

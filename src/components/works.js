@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 import NavigationContainer from "./navigation/navigation-container";
 import FooterContainer from "./navigation/footer-container";
@@ -14,6 +15,7 @@ export default class Works extends Component {
         };
 
         this.PortfolioItems = this.PortfolioItems.bind(this);
+        this.getPortfolioItems = this.getPortfolioItems.bind(this);
         
       }
     
@@ -32,6 +34,8 @@ export default class Works extends Component {
 
     axios.get(url,data)
     .then(response => {
+      console.log(response.data);
+      
         this.setState({
             data : response.data
         }
@@ -46,13 +50,13 @@ export default class Works extends Component {
   PortfolioItems(){
     console.log('state data',this.state.data);
      return this.state.data.map(item =>{
-          return <div>{item.title}</div> 
+          return <div>{item.category}</div> 
       })
-
      }
 
  componentDidMount(){
-     this.PortfolioItems();
+    // this.PortfolioItems();
+     this.getPortfolioItems();
  }
 
   render() {
@@ -70,7 +74,8 @@ export default class Works extends Component {
 
 
         <div>
-          {this.PortfolioItems()}
+       
+          {this.state.data != null ? this.PortfolioItems() : 'Loading'}
         
         </div>
 
