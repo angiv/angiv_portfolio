@@ -35,8 +35,8 @@ export default class Publications extends Component {
                     </a>
                  </div>
 
-                 <div>
-                     <img className="img" src={imgCover} alt="imgCover"/> 
+                 <div className='right-side'>
+                     <img className="publication_img" src={imgCover} alt="imgCover"/> 
                    
                  </div>
 

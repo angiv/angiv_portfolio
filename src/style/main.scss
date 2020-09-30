@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto Slab', serif;
-    color: #808080;;
+    color: #808080;
 
 }
 
@@ -17,6 +17,10 @@ body {
   font-weight: 900;
 }
 
+ul {
+
+}
+
 .contact_wrapper {
     text-align: center;
     font-size: 18px;
@@ -24,6 +28,21 @@ body {
     line-height: 10px;
 }
 
+.clients_lists  {
+    margin-left: 20px;
+    font-weight: 400;
+
+    a {
+        text-decoration: none;
+        color: #808080;
+        
+        &:hover {
+            font-size: 1.1em;
+            color: #651fff;
+            font-weight: 900;
+        }
+    }
+}
 
   
 

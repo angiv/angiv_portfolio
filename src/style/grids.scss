@@ -20,9 +20,52 @@
 
   .right-side {
     display: block;
+    margin-left: 20px;
   }
 
 
   .left-side {
     display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .publication_img {
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+
+  .about_wrapper {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #FED880;
+    color: black;
+  }
+
+  .about__title {
+    font-size: 1.5em;
+
+  }
+  
+  .about__txt {
+  
+  }
+
+  .home_title {
+    color:  black;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: 20px;
+
+  }
+
+
+  .text_one, 
+  .text_two,
+  .text_three {
+    margin-top: 10px;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.8;
+
   }
