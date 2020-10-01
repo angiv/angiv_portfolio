@@ -62,13 +62,25 @@ export default class Home extends Component {
           </div>
             <div className='skills_wrapper'>
               <div className="home_title">Skills</div>
-              <ul>
-                <li>Adobe InDesign</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-                <li>CorelDraw</li>
-                <li>Html/CSS</li>
-                <li>JavaScript</li>
+              <ul className='skills'>
+                <li>Adobe InDesign
+                  <div className='skills indesign'>90%</div>
+                </li>
+                <li>Adobe Photoshop
+                  <div className='skills photoshop'>70%</div>
+                </li>
+                <li>Adobe Illustrator
+                 <div className='skills illustrator'>70%</div>
+                </li>
+                <li>CorelDraw
+                  <div className='skills corel'>50%</div>
+                </li>
+                <li>Html/CSS
+                  <div className='skills html-css'>40%</div>
+                </li>
+                <li>JavaScript
+                  <div className='skills javascript'>40%</div>
+                </li>
               </ul>
 
 

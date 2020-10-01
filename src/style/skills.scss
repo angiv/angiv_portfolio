@@ -1,0 +1,47 @@
+.skills_wrapper {
+    width: 50%;
+    //background-color: #ddd;
+}
+
+.skills {
+   // text-align: right;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    }
+
+.indesign,
+.photoshop, .illustrator, .corel, .html-css, .javascript {
+    height: 10px;
+    text-align: right;
+    color: black;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+
+.indesign {
+    width: 90%; background-color: #FED880;
+}
+
+.photoshop {
+    width: 70%; background-color: #FED880;
+    
+}
+
+.illustrator {
+    width: 70%; background-color: #FED880;
+}
+
+.corel {
+    width: 50%; background-color: #FED880;
+}
+.html-css {
+    width: 40%; background-color: #FED880;
+}
+
+.javascript{
+    width: 40%; background-color: #FED880;
+}

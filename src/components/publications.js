@@ -18,7 +18,7 @@ export default class Publications extends Component {
         
             <div className='two-column'>
                <div className='left-side'>
-               <h3>Modalități grafice de prezentare a conținutului jurnalistic: infografice, tabele, scheme. Sfaturi și recomandări</h3>
+                <h3>Modalități grafice de prezentare a conținutului jurnalistic: infografice, tabele, scheme. Sfaturi și recomandări</h3>
                     <div className="publication__txt">
                         <p> Într-o definiție formulată pe scurt, infograficele sunt reprezentări vizuale grafice ale unor informaţii, date sau cunoştinţe. Sunt sigură că ați văzut o astfel de prezentare, formată din semne, simboluri şi cuvinte, colorate şi structurate, ușor de asimilat. Este dovedit științific, 90% din toată informația care este transmisă creierului nostru este vizuală. Din aceste 90% percepem/înțelegem mai repede 80%. Acest procent este ceea ce vedem și doar 20% – ce citim. </p>
                           <p>Știți de ce infografica e atât de populară? Deoarece interpretarea informațiilor grafice are loc în partea creierului care este responsabilă pentru producerea emoțiilor pozitive. Infograficele  sunt prezentări vizuale ale unor informații-cheie care utilizează ilustrații pentru afișarea conținutului. Acestea exprimă mesaje complexe într-un mod care îmbunătățește înțelegerea cititorilor asupra subiectului. Imaginile sunt de multe ori o extensie a conținutului unui articol scris, dar infograficul transmite un mesaj de sine stătător sau un principiu.</p>

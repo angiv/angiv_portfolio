@@ -55,8 +55,7 @@ export default class Works extends Component {
      }
 
  componentDidMount(){
-    // this.PortfolioItems();
-     this.getPortfolioItems();
+       this.getPortfolioItems();
  }
 
   render() {

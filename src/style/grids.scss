@@ -64,8 +64,15 @@
   .text_two,
   .text_three {
     margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid;
     font-size: 1.1em;
     text-align: center;
     line-height: 1.8;
 
+  }
+
+  .text_three {
+    border-right: 1px solid;
   }
