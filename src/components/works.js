@@ -4,6 +4,8 @@ import axios from 'axios';
 import NavigationContainer from "./navigation/navigation-container";
 import FooterContainer from "./navigation/footer-container";
 
+import Logos from './works/logos';
+
 export default class Works extends Component {
 
       constructor(){
@@ -66,6 +68,7 @@ export default class Works extends Component {
               MY WORKS
             </div>
             <h1>Logos</h1>
+            < Logos />
             <h1>Infographics</h1>
             <h1>Posters</h1>
             <h1>Magazines</h1>
