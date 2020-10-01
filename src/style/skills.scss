@@ -6,7 +6,7 @@
 .skills {
    // text-align: right;
     margin-top: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     color: black;
@@ -19,16 +19,29 @@
     color: black;
     font-weight: 600;
     padding-right: 10px;
+    background-color: #FED880;
 }
 
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: '\2022';
+    color: #FED880;
+    font-weight: 900;
+    font-size: 2em;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
 
 .indesign {
-    width: 90%; background-color: #FED880;
+    width: 90%; 
 }
 
 .photoshop {
     width: 70%; background-color: #FED880;
-    
 }
 
 .illustrator {
