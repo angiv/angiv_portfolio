@@ -61,11 +61,10 @@ export default class Home extends Component {
 
           </div>
             <div className='skills_wrapper'>
-              <div className="home_title">Skills</div>
-              <ul className='skills'>
-                <li>Adobe InDesign
-                  <div className='skills indesign'>90%</div>
-                </li>
+              <div className="home_title">Technical Skills</div>
+              <div className='skills'>
+                <li>Adobe InDesign </li>
+                <div className='skills indesign'>90%</div>
                 <li>Adobe Photoshop
                   <div className='skills photoshop'>70%</div>
                 </li>
@@ -81,7 +80,7 @@ export default class Home extends Component {
                 <li>JavaScript
                   <div className='skills javascript'>40%</div>
                 </li>
-              </ul>
+              </div>
 
 
             </div>

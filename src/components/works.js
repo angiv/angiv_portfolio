@@ -4,6 +4,8 @@ import axios from 'axios';
 import NavigationContainer from "./navigation/navigation-container";
 import FooterContainer from "./navigation/footer-container";
 
+import WorksSearch from './works/worksSearch.js';
+
 import Logos from './works/logos';
 
 export default class Works extends Component {
@@ -53,6 +55,7 @@ export default class Works extends Component {
     console.log('state data',this.state.data);
      return this.state.data.map(item =>{
           return <div>{item.category}</div> 
+        
       })
      }
 
@@ -67,6 +70,11 @@ export default class Works extends Component {
             <div className='pages_title'>
               MY WORKS
             </div>
+
+            <WorksSearch searchText={(text) => setTerm(text)} />
+
+
+
             <h1>Logos</h1>
             < Logos />
             <h1>Infographics</h1>
