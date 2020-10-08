@@ -51,13 +51,18 @@ export default class Works extends Component {
 
   }
   
-  PortfolioItems(){
+  PortfolioItems(){ 
     console.log('state data',this.state.data);
-     return this.state.data.map(item =>{
-          return <div>{item.category}</div> 
-        
-      })
-     }
+    const img_url = 'https://angivportfolio-9187.restdb.io/media';
+    return this.state.data.map(item =>{ 
+      return <div> 
+        <div>{item.category}</div>
+         <div> 
+            <img src={img_url+'/'+item.imagine}/> 
+          </div>
+         </div> 
+         })
+ }
 
  componentDidMount(){
        this.getPortfolioItems();
