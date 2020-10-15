@@ -40,6 +40,10 @@ body {
     }
 }
 
+.bold {
+    font-weight: 900;
+}
+
   
 
 @import "./variables.scss";
@@ -49,3 +53,4 @@ body {
 @import "./grids.scss";
 @import "./skills.scss";
 @import "./search.scss";
+@import "./logos-wrapper.scss";

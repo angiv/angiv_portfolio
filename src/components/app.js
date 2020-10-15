@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Home from "./home";
 import Works from "./works";
 import Publications from "./publications";
-import CV from "./cv";
+import Magazines from "./magazines";
 import Contact from "./contact";
 
 export default class App extends Component {
@@ -29,7 +29,7 @@ export default class App extends Component {
                       <Route exact path="/" component={Home} />
                       <Route path="/works" component={Works} />
                       <Route path="/publications" component={Publications} />
-                      <Route path="/cv" component={CV} />
+                      <Route path="/magazines" component={Magazines} />
                       <Route path="/contact" component={Contact} />
                 </Switch>
             

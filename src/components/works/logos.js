@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-
-import NavigationContainer from "../navigation/navigation-container";
-import FooterContainer from "../navigation/footer-container";
+import axios from 'axios';
+import Carousel from 'react-elastic-carousel';
 
 import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
@@ -9,55 +8,93 @@ import { Link } from "react-router-dom";
 
 export default class Logos extends Component {
     
- 
-      constructor(props) {
-        super(props);
-    
-        this.state = {
-          portfolioItems: ""
-        };
+        constructor(){
+          super();
+          this.state = {
+            pageTitle: "Welcome to my portfolio",
+            isLoading: false,
+            data: []   
+          };
+
+          this.PortfolioItems = this.PortfolioItems.bind(this);
+          this.getPortfolioItems = this.getPortfolioItems.bind(this);
+          
+        }
+
+
+      getPortfolioItems(){
+      const url_temp_prefix = 'https://cors-anywhere.herokuapp.com/'; 
+      const url = `${url_temp_prefix}https://angivportfolio-9187.restdb.io/rest/portfolio`;
+      const data =   {
+          "async": true,
+          "crossDomain": true,
+          "headers": {
+            "content-type": "application/json",
+            "x-apikey": "90c992050559cc8e045337a7c01b9e5eee3d7",
+            "cache-control": "no-cache"
+        }};
+
+      axios.get(url,data)
+      .then(response => {
+        console.log(response.data);
+        
+          this.setState({
+              data : response.data
+          }
+      )
+        })
+      .catch(error => {
+          console.log('error',error);
+      });
+
       }
+
+      PortfolioItems(){ 
+        console.log('state data',this.state.data);
+        const img_url = 'https://angivportfolio-9187.restdb.io/media';
+        return this.state.data.map(item =>{ 
+          return <div className='card two-column'> 
+                      
+             <div className="left-side"> 
+                <img className='card-image' src={img_url+'/'+item.imagine}/> 
+              </div>
+              <div className="right-side">
+                <div className='card-title'> {item.name}</div>
+                <div><span className='bold'>Category:</span> {item.category}</div>
+                
+                <div><span className='bold'>Description:</span> {item.description}</div>
+                  <div><span className='bold'>Client:</span> {item.client}</div>
+                  <div><span className='bold'> Url:</span> <a href={item.url}>{item.url}</a></div>
+                </div>
+             </div> 
+             })
+     }
+    
+
+      componentDidMount(){
+        this.getPortfolioItems();
+      }
+
 
     render() {
       const { id, name, description, url, category, imagine, client } = this.props;
+
+  
+    if (this.state.isLoading){
+      return <div>Loading...</div>;
+    }
    
       return (
 
         <div>
-         {/*   <NavigationContainer />*/}
-         <div className='logos-wrapper'>
-            <h1>Logos</h1>
-    
-            
+            <div className='logos-wrapper'>
+            <Carousel className="rec-carousel-wrapper">
+           
+             {this.PortfolioItems()}
+             </Carousel>
 
-
-                <div className='logos-imagine__front'>
-                    <img className='logos-imagine__front__image' src={imagine}/>
-                    <div className='logos-imagine__front__name'>{name}</div>
-                </div>
-                <div className='logos-imagine__back'>
-                    <div className='logos-imagine__back__title'>
-                       {name}
-                    </div>
-                    <div className='logos-imagine__back__description'>
-                      {description}
-                    </div>
-                    <div className='logos-imagine__back__client'>
-                      {client}
-                    </div>
-
-                    <div className='logos-imagine__back__url'>
-                      {url}
-                    </div>
-                </div>
-                </div>
-
-         
-         
-         
-         {/*  <FooterContainer />*/}
-
-         </div>
+             </div>
+          </div>
     )
   }
 }

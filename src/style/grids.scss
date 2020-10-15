@@ -16,6 +16,7 @@
     display: grid;
     grid-gap: 21px;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px auto;
   }
 
   .right-side {
@@ -34,6 +35,39 @@
     margin-top: 40px;
     padding-top: 40px;
   }
+
+  .magazine_content {
+    margin: auto;
+    display: block;   
+
+    font-weight: 400;
+
+    a {
+        text-decoration: none;
+        color: #808080;
+        
+        &:hover {
+            font-size: 1.1em;
+            color: #651fff;
+            font-weight: 900;
+        }
+    }
+}
+
+
+ .magazine_content:after {
+  display: table;
+}
+  .magazine_img {
+    height: 500px;
+
+  }
+
+  .magazine_content__caption :a {
+    margin-left: 20px;
+   
+}
+
 
   .about_wrapper {
     margin-top: 30px;

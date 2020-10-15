@@ -56,7 +56,7 @@ export default class Works extends Component {
     const img_url = 'https://angivportfolio-9187.restdb.io/media';
     return this.state.data.map(item =>{ 
       return <div> 
-        <div>{item.category}</div>
+        <div>{item.category}</div> 
          <div> 
             <img src={img_url+'/'+item.imagine}/> 
           </div>
@@ -73,27 +73,12 @@ export default class Works extends Component {
         <div>
             <NavigationContainer />
             <div className='pages_title'>
-              MY WORKS
+              SOME OF MY WORKS
             </div>
 
-            <WorksSearch searchText={(text) => setTerm(text)} />
-
-
-
-            <h1>Logos</h1>
+          {/*  <WorksSearch searchText={(text) => setTerm(text)} /> */}
             < Logos />
-            <h1>Infographics</h1>
-            <h1>Posters</h1>
-            <h1>Magazines</h1>
-            <h1>Studies</h1>
-
-
-        <div>
-       
-          {this.state.data != null ? this.PortfolioItems() : 'Loading'}
         
-        </div>
-
             <FooterContainer />
 
          </div>
