@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Carousel from 'react-elastic-carousel';
+import Loader from 'react-loader-spinner';
+
+
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+
 
 import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
 
 
-export default class Logos extends Component {
+export default class OtherWorks extends Component {
     
         constructor(){
           super();
@@ -55,14 +60,13 @@ export default class Logos extends Component {
         return this.state.data.map(item =>{ 
           return <div className='card two-column'> 
                       
-             <div className="left-side"> 
+              <div className="left-side"> 
                 <img className='card-image' src={img_url+'/'+item.imagine}/> 
               </div>
               <div className="right-side">
                 <div className='card-title'> {item.name}</div>
-                <div><span className='bold'>Category:</span> {item.category}</div>
-                
-                <div><span className='bold'>Description:</span> {item.description}</div>
+                  <div><span className='bold'>Category:</span> {item.category}</div>
+                  <div><span className='bold'>Description:</span> {item.description}</div>
                   <div><span className='bold'>Client:</span> {item.client}</div>
                   <div><span className='bold'> Url:</span> <a href={item.url}>{item.url}</a></div>
                 </div>
@@ -76,24 +80,31 @@ export default class Logos extends Component {
       }
 
 
+
     render() {
       const { id, name, description, url, category, imagine, client } = this.props;
-
-  
-    if (this.state.isLoading){
-      return <div>Loading...</div>;
-    }
    
+     
+      if (this.state.isLoading){
+        return <div>
+          
+          Loading...</div>;
+      }
+    
       return (
 
         <div>
             <div className='logos-wrapper'>
+            <Loader type="ThreeDots" color="#FED880" height={40} width={40} timeout={2000}/>
+
+
             <Carousel className="rec-carousel-wrapper">
            
              {this.PortfolioItems()}
              </Carousel>
 
              </div>
+       
           </div>
     )
   }

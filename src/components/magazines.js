@@ -44,7 +44,8 @@ export default class Magazines extends Component {
             <div>
               <a href='https://e.issuu.com/issuu-reader3-embed-files/latest/twittercard.html?u=angiv&amp;d=migratie-2011&amp;p=1'
               className="magazine_content__caption" target="_blank">
-              Magazine "Migration for Development: success stories from Moldova"    
+              Magazine "Migration for Development: 
+              <div>success stories from Moldova"</div>  
               </a>
               </div>
             </div>

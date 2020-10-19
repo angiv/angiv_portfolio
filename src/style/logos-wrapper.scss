@@ -10,7 +10,7 @@
     padding: 10px;
     border-radius: 10px;
     width: 800px;
-    height: 500px;
+    height: 450px;
     text-align: center;  
     background-color: #f6f6f6;
 
@@ -42,11 +42,11 @@
     height: fit-content;
     align-items: center;
    display: flex;
-   column-gap: 25px;
+   column-gap: 15px;
 
 
    .rec-carousel-item {
-        height: 550px;
+        height: 500px;
         object-fit: cover;
     }
     .rec-pagination {
@@ -66,4 +66,3 @@
 
 
   }
-

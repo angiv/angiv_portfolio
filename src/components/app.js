@@ -5,6 +5,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //import { faTrash, faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 
+import Icons from "../helpers/icons";
+
 
 import Home from "./home";
 import Works from "./works";
@@ -15,9 +17,9 @@ import Contact from "./contact";
 export default class App extends Component {
   constructor() {
     super();
-
+    Icons();
     };
-
+   
 
   render() {
     return (

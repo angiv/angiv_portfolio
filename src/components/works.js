@@ -6,7 +6,7 @@ import FooterContainer from "./navigation/footer-container";
 
 import WorksSearch from './works/worksSearch.js';
 
-import Logos from './works/logos';
+import OtherWorks from './works/logos';
 
 export default class Works extends Component {
 
@@ -77,7 +77,7 @@ export default class Works extends Component {
             </div>
 
           {/*  <WorksSearch searchText={(text) => setTerm(text)} /> */}
-            < Logos />
+            < OtherWorks />
         
             <FooterContainer />
 

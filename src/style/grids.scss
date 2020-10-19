@@ -38,8 +38,7 @@
 
   .magazine_content {
     margin: auto;
-    display: block;   
-
+    display: block;
     font-weight: 400;
 
     a {
@@ -65,6 +64,7 @@
 
   .magazine_content__caption :a {
     margin-left: 20px;
+    align-self: center;
    
 }
 
