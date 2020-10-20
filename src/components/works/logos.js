@@ -61,7 +61,7 @@ export default class OtherWorks extends Component {
           return <div className='card two-column'> 
                       
               <div className="left-side"> 
-                <img className='card-image' src={img_url+'/'+item.imagine}/> 
+               <img className='card-image' src={img_url+'/'+item.imagine}/> 
               </div>
               <div className="right-side">
                 <div className='card-title'> {item.name}</div>
@@ -82,7 +82,7 @@ export default class OtherWorks extends Component {
 
 
     render() {
-      const { id, name, description, url, category, imagine, client } = this.props;
+      const { name, description, url, category, imagine, client } = this.props;
    
      
       if (this.state.isLoading){

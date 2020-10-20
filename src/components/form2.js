@@ -1,4 +1,7 @@
 import React, { Component, Fragment } from 'react';
+
+import axios from 'axios';
+
 import Form1 from "./form1";
 
 
@@ -14,7 +17,7 @@ const POSITIONS = [
         title: 'Infographic Design',
     },
     {
-        id: 'poster',
+        id: 'c',
         value: 'Poster Design',
         title: 'Poster Design',
     },
@@ -33,6 +36,8 @@ const POSITIONS = [
 
 class Form2 extends Component {
 
+
+
     state = {
         inputText:'',
         textareaText:'',
@@ -43,6 +48,9 @@ class Form2 extends Component {
             position:'',
         }
     }
+
+    
+
 
     handleInputChange = ({ target: { value } }) => {
         this.setState({

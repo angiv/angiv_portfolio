@@ -1,5 +1,4 @@
 .logos-wrapper {
-
     text-align: center;
     display: grid;
 }
@@ -44,7 +43,6 @@
    display: flex;
    column-gap: 15px;
 
-
    .rec-carousel-item {
         height: 500px;
         object-fit: cover;
@@ -53,9 +51,7 @@
         position: relative;
         padding-top: 5px;
     }
-
 }
-
 
 .slides {
       width: 500px;
@@ -63,6 +59,5 @@
     margin-right:auto;
     display: flex;
     align-items: center;
-
-
   }
+

@@ -40,7 +40,6 @@ export default class Home extends Component {
             </div>
           </div>
 
-
           <div className='experience_wrapper'>
               <div className="home_title"> Sphere of Activity</div>
               <div className='three-column'>
@@ -55,7 +54,6 @@ export default class Home extends Component {
                 <div className='text_three'>
                   Responsive websites (static HTML/CSS, JavaScript, React), graphics for social media, web banner advertising.
                 </div>
-
 
               </div>
 
@@ -82,10 +80,9 @@ export default class Home extends Component {
                 </li>
               </div>
 
-
             </div>
 
-            
+     
             <div className='client_wrapper'>
             <div className="home_title">Clients</div>
                 <div className='clients_lists'>
@@ -94,12 +91,11 @@ export default class Home extends Component {
                   <a href='https://crjm.org/en/prezentarea-crjm/' className="" target="_blank">The Legal Resources Centre from Moldova (LRCM), </a>
                   <a href='http://www.fes-moldova.org/' className="" target="_blank">FES in Moldova,  </a>
                   <a href='https://librariadorinta.md/' className="" target="_blank">Publishing House "Dorinta", </a>
-                  etc.
+                  others.
                 </div>
             </div>
 
-
-            <FooterContainer />
+           <FooterContainer />
          </div>
     );
   }

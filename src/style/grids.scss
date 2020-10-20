@@ -4,7 +4,7 @@
     grid-template-columns: 1fr;
   }
   
-  
+
 .two-column {
     display: grid;
     grid-gap: 21px;
@@ -39,6 +39,8 @@
   .magazine_content {
     margin: auto;
     display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
     font-weight: 400;
 
     a {
@@ -51,22 +53,19 @@
             font-weight: 900;
         }
     }
-}
 
-
- .magazine_content:after {
-  display: table;
-}
-  .magazine_img {
-    height: 500px;
-
+    .magazine_img {
+      height: 500px;
+  
+    }
+  
+    .magazine_content__caption :a {
+      margin-left: 20px;
+      align-self: center;
+     
   }
-
-  .magazine_content__caption :a {
-    margin-left: 20px;
-    align-self: center;
-   
 }
+
 
 
   .about_wrapper {
@@ -81,16 +80,15 @@
 
   }
   
-  .about__txt {
-  
-  }
+ // .about__txt {
+//  
+//  }
 
   .home_title {
     color:  black;
     font-size: 1.8em;
     font-weight: 600;
     margin-top: 20px;
-
   }
 
 
@@ -109,4 +107,13 @@
 
   .text_three {
     border-right: 1px solid;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .three-column, .two-column, .card {
+      width: auto;
+      grid-template-columns: none;
+    }
+
   }
