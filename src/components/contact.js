@@ -3,13 +3,10 @@ import React, { Component } from 'react';
 
 import NavigationContainer from "./navigation/navigation-container";
 import FooterContainer from "./navigation/footer-container";
-
+import Form3 from "./form3";
 import Form2 from "./form2";
 
-
 export default class Contact extends Component {
-
-
 
 
   render() {

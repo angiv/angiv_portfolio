@@ -58,7 +58,7 @@ export default class OtherWorks extends Component {
         console.log('state data',this.state.data);
         const img_url = 'https://angivportfolio-9187.restdb.io/media';
         return this.state.data.map(item =>{ 
-          return <div className='card two-column'> 
+          return <div key={item.id} className='card two-column'> 
                       
               <div className="left-side"> 
                <img className='card-image' src={img_url+'/'+item.imagine}/> 
